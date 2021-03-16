@@ -26,6 +26,18 @@ namespace Chap01aMyFirstConsoleApp
                         
             Console.WriteLine($"The area is {area}.");
 
+            while (area < 20)
+            {
+                height++;
+                area = width * height;
+            }
+
+            do
+            {
+                width--;
+                area = width * height;
+            } while (area > 25);
+
             // A boolean variable is either true or false
             bool trueValue = true;
             Console.WriteLine(trueValue);
