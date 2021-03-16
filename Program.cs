@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace Chap01aMyFirstConsoleApp
 {
@@ -6,7 +7,50 @@ namespace Chap01aMyFirstConsoleApp
     {
         static void Main(string[] args)
         {
-            OperatorExamples();
+            //OperatorExamples();
+            TryAnIf();
+            TrySomeLoop();
+            TryAnIfElse();
+        }
+
+        private static void TryAnIfElse()
+        {
+            int x = 5;
+            if (x == 10)
+            {
+                WriteLine("x must be 10");
+            }
+            else
+            {
+                WriteLine("x isn't 10");
+            }
+        }
+
+        private static void TrySomeLoop()
+        {
+            int count = 0;
+            while (count < 10)
+            {
+                count += 1;
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                count -= 1;
+            }
+            WriteLine($"The answer is {count}");
+        }
+
+        private static void TryAnIf()
+        {
+            int someValue = 4;
+            string name = "Bobbo Jr.";
+
+            if ((someValue == 3) && (name == "Joe"))
+            {
+                WriteLine("x is 3 and the name is Joe");
+            }
+            WriteLine("This line runs no matter what");
         }
 
         private static void OperatorExamples()
