@@ -23,12 +23,8 @@ namespace Chap01aMyFirstConsoleApp
              */
             int height = 2 + 4;
             int area = width * height;
-            Console.WriteLine(area);
-
-            // The next two statement declares string variable and use + to concatenate them (join them together)
-            string result = "The area";
-            result = result + " is " + area;
-            Console.WriteLine(result);
+                        
+            Console.WriteLine($"The area is {area}.");
 
             // A boolean variable is either true or false
             bool trueValue = true;
